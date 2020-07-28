@@ -40,7 +40,7 @@ def get_html(name):
 
 
     html = requests.post(url, headers=headers, data=data)#有需要的可以改成session写法
-    # print(html.json())
+
     print('正在执行有道翻译程序:')
     print('翻译的词:{}'.format(html.json()['translateResult'][0][0]['src']))
     print('翻译结果:{}'.format(html.json()['translateResult'][0][0]['tgt']))

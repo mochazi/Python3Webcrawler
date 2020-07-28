@@ -64,8 +64,6 @@ async def download(img_url):
 
 if __name__ == '__main__':
 
-	
-
 	loop = asyncio.get_event_loop()#创建异步编程
 
 	name = parse.quote('初音未来')#有需要的可以添加一个input，让用户输入

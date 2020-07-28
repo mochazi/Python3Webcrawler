@@ -6,8 +6,11 @@ from sqlalchemy.ext.declarative import declarative_base
 #基础类
 Base = declarative_base()
 
+#此处没有使用pymysql的驱动
+#请安装pip install mysql-connector-python
+#engine中的 mysqlconnector 为 mysql官网驱动
 engine = create_engine(
-	'mysql+pymysql://root:root@127.0.0.1:3306/test?charset=utf8',#连接本地
+	'mysql+mysqlconnector://root:root@127.0.0.1:3306/test?charset=utf8',#连接本地
 	echo = True
 )
 

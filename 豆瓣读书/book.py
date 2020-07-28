@@ -65,12 +65,12 @@ def parse_html(html):
 
 async def dowmload(title,url):#保存封面图片
 
-	if not os.path.exists('doubanImg'):#检查有没有文件夹并创建
-		os.makedirs('doubanImg')
+	if not os.path.exists('./豆瓣读书/doubanImg'):#检查有没有文件夹并创建
+		os.makedirs('./豆瓣读书/doubanImg')
 
 	async with aiohttp.ClientSession(headers = headers) as session:
 		async with session.get(url) as html:		
-			with open('./doubanImg/{}.jpg'.format(title),'wb')as f:
+			with open('./豆瓣读书/doubanImg/{}.jpg'.format(title),'wb')as f:
 				f.write(await html.content.read())
 	
 if __name__ == '__main__':
