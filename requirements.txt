@@ -5,7 +5,7 @@ beautifulsoup4==4.9.1
 certifi==2020.6.20
 chardet==3.0.4
 idna==2.10
-lxml==4.5.2
+lxml==4.6.2
 multidict==4.7.6
 mysql-connector-python==8.0.21
 protobuf==3.12.2
