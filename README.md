@@ -1,11 +1,11 @@
 # **Python3Webcrawler**
-## **[哔哩哔哩作者：-相依-](https://space.bilibili.com/343154012)**  &emsp;**UPDATE 2020 7 28**
+## **[哔哩哔哩作者：-相依-](https://space.bilibili.com/343154012)**  &emsp;**UPDATE 2021-01-10**
 > **精心挑选了几个爬虫，给大家在学Scrapy框架之前打基础。**
 >> **该项目仅限学习交流，请勿用于商业用途，如有侵权，请联系删除。**
 
 |**程序依赖**|**安装指令**|**项目使用版本**|
 |:----:|:--------:|:--------:|
-|**lxml**|**pip install lxml**|**4.5.2**|
+|**lxml**|**pip install lxml**|**4.6.2**|
 |**aiohttp**|**pip install aiohttp**|**3.6.2**|
 |**requests**|**pip install requests**|**2.24.0**|
 |**PyExecJS**|**pip install PyExecJS**|**1.5.1**|

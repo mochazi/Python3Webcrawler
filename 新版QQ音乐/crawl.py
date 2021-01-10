@@ -164,9 +164,9 @@ def download(song_mid,sing_name,singer_name):
         purl = html['req_0']['data']['midurlinfo'][0]['purl']
     
 
-        url = 'http://119.147.228.27/amobile.music.tc.qq.com/{}'.format(purl)
+        url = 'https://113.105.167.153/amobile.music.tc.qq.com/{}'.format(purl)
 
-        html = requests.get(url,headers = headers)
+        html = requests.get(url,headers = headers,verify=False)
 
         html.encoding = 'utf-8'
 
@@ -174,12 +174,13 @@ def download(song_mid,sing_name,singer_name):
 
         filename = './新版QQ音乐/歌曲'
 
-        if not os.path.exists(filename):
-            os.makedirs(filename)
-    
-        with open('./新版QQ音乐/歌曲/{}.m4a'.format(sing_file_name),'wb') as f:
-            print('\n正在下载{}歌曲.....\n'.format(sing_file_name))
-            f.write(html.content)
+        if html.status_code != 403:
+            if not os.path.exists(filename):
+                os.makedirs(filename)
+        
+            with open('./新版QQ音乐/歌曲/{}.m4a'.format(sing_file_name),'wb') as f:
+                print('\n正在下载{}歌曲.....\n'.format(sing_file_name))
+                f.write(html.content)
             
     except:
         print('查询权限失败，或没有查到对应的歌曲')
