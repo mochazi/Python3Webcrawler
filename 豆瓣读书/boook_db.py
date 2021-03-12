@@ -23,6 +23,7 @@ class Book(Base):
 	pl = Column('pl',String(10))
 	introduce = Column('introduce',Text())
 
+Base.metadata.create_all(engine)
 
 session = sessionmaker(engine)
 sess=session()
