@@ -7,6 +7,9 @@ from urllib import parse
 from concurrent.futures import ThreadPoolExecutor
 
 headers = {
+    'Accept':'text/plain, */*; q=0.01',
+    'Accept-Encoding':'gzip, deflate, br',
+    'Accept-Language':'zh-CN,zh;q=0.9,en;q=0.8',
     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36',
     'Referer':'https://image.baidu.com/search/index?tn=baiduimage&ipn=r&ct=201326592&cl=2&lm=-1&st=-1&fm=result&fr=&sf=1&pv=&ic=0&nc=1&z=&hd=&latest=&copyright=&se=1&showtab=0&fb=0&width=&height=&face=0&istype=2&ie=utf-8&sid=&word=%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5',
     #参考链接:https://image.baidu.com/
