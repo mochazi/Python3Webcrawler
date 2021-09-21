@@ -1,5 +1,6 @@
 # Python3.7
 # encoding=utf-8
+
 import requests,time,json,os
 import qrcode   # 生成二维码
 import cv2 as cv # 读取二维码图片
