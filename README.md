@@ -1,7 +1,18 @@
 # **Python3Webcrawler**
-## **[哔哩哔哩作者：-相依-](https://space.bilibili.com/343154012)**  &emsp;**UPDATE 2021-03-12**
+## **[哔哩哔哩作者：-相依-](https://space.bilibili.com/343154012)**  &emsp;**UPDATE 2021-09-21**
+
+---
+
 > **精心挑选了几个爬虫，给大家在学Scrapy框架之前打基础。**
 >> **该项目仅限学习交流，请勿用于商业用途，如有侵权，请联系删除。**
+
+---
+
+|**编程语言**|**项目使用版本**|
+|:----:|:--------:|
+|**python**|**3.7.9**|
+
+---
 
 |**程序依赖**|**安装指令**|**项目使用版本**|
 |:----:|:--------:|:--------:|
@@ -12,6 +23,10 @@
 |**sqlalchemy**|**pip install sqlalchemy**|**1.3.23**|
 |**beautifulsoup4**|**pip install beautifulsoup4**|**4.9.3**|
 |**mysqlconnector**|**pip install mysql-connector-python**|**8.0.23**|
+|**qrcode**|**pip install qrcode**|**7.3**|
+|**opencv-python**|**pip install opencv-python**|**4.5.3.56**|
+
+---
 
  * ### **京东&emsp;&emsp;&emsp;[官网地址](https://item.jd.com)** 
  * ### **网易&emsp;&emsp;&emsp;[官网地址](https://www.163.com/)** 
@@ -21,3 +36,4 @@
  * ### **百度图片&emsp;[官网地址](https://image.baidu.com)** 
  * ### **豆瓣读书&emsp;[官网地址](https://book.douban.com)** 
  * ### **有道翻译&emsp;[官网地址](http://fanyi.youdao.com)** 
+* ### **哔哩哔哩&emsp;[官网地址](https://bilibili.com)** 
