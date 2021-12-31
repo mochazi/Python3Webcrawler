@@ -1,0 +1,10 @@
+一次性安装
+pip install -r requirements.txt -i https://pypi.mirrors.ustc.edu.cn/simple
+
+分开安装
+pip install mitmproxy
+pip install selenium
+pip install m3u8
+pip install requests
+pip install bs4
+pip install pycryptodome
