@@ -6,7 +6,7 @@ from pathlib import Path
 from Crypto.Cipher import AES
 
 '''
-本次爬取的课程地址：https://appdgjqmn6j1714.h5.xiaoeknow.com/v1/course/video/v_61ceb0f8e4b05006f9c4214e?type=2&pro_id=p_61cc408ee4b0a91144afda88&is_redirect=1
+本次爬取的课程地址：https://appdgjqmn6j1714.h5.xiaoeknow.com/v1/course/video/v_61ceb0f8e4b05006f9c4214e
 '''
 
 # 生成python修复文件
