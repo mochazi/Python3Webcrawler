@@ -1,5 +1,5 @@
 # **Python3Webcrawler**
-## **[哔哩哔哩作者：-相依-](https://space.bilibili.com/343154012)**  &emsp;**UPDATE 2021-09-21**
+## **[哔哩哔哩作者：-相依-](https://space.bilibili.com/343154012)**  &emsp;**UPDATE 2021-12-31**
 
 ---
 
@@ -25,6 +25,9 @@
 |**mysqlconnector**|**pip install mysql-connector-python**|**8.0.23**|
 |**qrcode**|**pip install qrcode**|**7.3**|
 |**opencv-python**|**pip install opencv-python**|**4.5.3.56**|
+|**m3u8**|**pip install m3u8**|**0.9.0**|
+|**mitmproxy**|**pip install mitmproxy**|**5.3.0**|
+|**selenium**|**pip install selenium**|**3.141.0**|
 
 ---
 
@@ -36,4 +39,5 @@
  * ### **百度图片&emsp;[官网地址](https://image.baidu.com)** 
  * ### **豆瓣读书&emsp;[官网地址](https://book.douban.com)** 
  * ### **有道翻译&emsp;[官网地址](http://fanyi.youdao.com)** 
-* ### **哔哩哔哩&emsp;[官网地址](https://bilibili.com)** 
+ * ### **哔哩哔哩&emsp;[官网地址](https://bilibili.com)** 
+ * ### **小鹅通&emsp;[官网地址](https://www.xiaoe-tech.com/)** 
