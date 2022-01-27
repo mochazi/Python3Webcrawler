@@ -28,7 +28,7 @@
 |**m3u8**|**pip install m3u8**|**0.9.0**|
 |**mitmproxy**|**pip install mitmproxy**|**5.3.0**|
 |**selenium**|**pip install selenium**|**3.141.0**|
-
+|**pycryptodome**|**pip install pycryptodome**|**3.10.1**|
 ---
 
  * ### **京东&emsp;&emsp;&emsp;[官网地址](https://item.jd.com)** 
@@ -40,5 +40,5 @@
  * ### **豆瓣读书&emsp;[官网地址](https://book.douban.com)** 
  * ### **有道翻译&emsp;[官网地址](http://fanyi.youdao.com)** 
  * ### **哔哩哔哩&emsp;[官网地址](https://bilibili.com)** 
- * ### **小鹅通&emsp;[官网地址](https://www.xiaoe-tech.com)**
+ * ### **小鹅通&emsp;&emsp;[官网地址](https://www.xiaoe-tech.com)**
  * ### **荔枝微课&emsp;[官网地址](https://m.lizhiweike.com)**
