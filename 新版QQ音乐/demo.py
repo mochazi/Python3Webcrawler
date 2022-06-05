@@ -6,7 +6,7 @@ from urllib import parse
 from concurrent.futures import ThreadPoolExecutor,ProcessPoolExecutor
 from db import SQLsession,Song
 
-lock = threading.Lock()
+# lock = threading.Lock()
 
 headers = {
     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36',
@@ -14,11 +14,11 @@ headers = {
     #参考链接 https://y.qq.com/portal/singer_list.html#page=1&index=1&
 }
 
-session = SQLsession()
+# session = SQLsession()
 
 def get_sign(data):
 
-    with open('./新版QQ音乐/get_sign.js','r',encoding='utf-8') as f:
+    with open('./get_sign.js','r',encoding='utf-8') as f:
         text = f.read()
     
     js_data = execjs.compile(text)
@@ -124,19 +124,19 @@ def get_singer_data(mid,singer_name):
         for d in datas:
             sing_name = d['songInfo']['title']
             song_mid = d['songInfo']['mid']
-            try:
-                lock.acquire()#锁上
-
-                session.add(Song(song_name = sing_name,
-                                song_singer = singer_name,
-                                song_mid = song_mid))
-                session.commit()
-
-                lock.release()#解锁
-                print('commit')
-            except:                
-                session.rollback()
-                print('rollbeak')
+            # try:
+            #     lock.acquire()#锁上
+            #
+            #     session.add(Song(song_name = sing_name,
+            #                     song_singer = singer_name,
+            #                     song_mid = song_mid))
+            #     session.commit()
+            #
+            #     lock.release()#解锁
+            #     print('commit')
+            # except:
+            #     session.rollback()
+            #     print('rollbeak')
    
 
             print('歌手名字：{}\t歌曲名字：{}\t歌曲ID：{}'.format(singer_name,sing_name,song_mid))
@@ -172,13 +172,13 @@ def download(song_mid,sing_name,singer_name):
 
         sing_file_name = '{} -- {}'.format(sing_name,singer_name)
 
-        filename = './新版QQ音乐/歌曲'
+        filename = './歌曲'
 
         if html.status_code != 403:
             if not os.path.exists(filename):
                 os.makedirs(filename)
         
-            with open('./新版QQ音乐/歌曲/{}.m4a'.format(sing_file_name),'wb') as f:
+            with open('./歌曲/{}.m4a'.format(sing_file_name),'wb') as f:
                 print('\n正在下载{}歌曲.....\n'.format(sing_file_name))
                 f.write(html.content)
             
@@ -190,7 +190,7 @@ def download(song_mid,sing_name,singer_name):
 
 
 if __name__ == "__main__":
-    myProcess()
-
+    # myProcess()
+    get_singer_mid(1)
 
 

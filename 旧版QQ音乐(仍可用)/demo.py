@@ -150,12 +150,12 @@ def download(songmid,sing_name,singer_name):
 
 		sing_file_name = '{} -- {}'.format(sing_name,singer_name)
 
-		filename = './旧版QQ音乐(仍可用)/歌曲'
+		filename = './歌曲'
 
 		if not os.path.exists(filename):
 			os.makedirs(filename)
 	
-		with open('./旧版QQ音乐(仍可用)/歌曲/{}.m4a'.format(sing_file_name),'wb') as f:
+		with open('./歌曲/{}.m4a'.format(sing_file_name),'wb') as f:
 			print('\n正在下载{}歌曲.....\n'.format(sing_file_name))
 			f.write(html.content)
 		
@@ -165,4 +165,5 @@ def download(songmid,sing_name,singer_name):
 
 
 if __name__ == '__main__':
-	myProcess()
+	# myProcess()
+	get_singer_mid(1)
