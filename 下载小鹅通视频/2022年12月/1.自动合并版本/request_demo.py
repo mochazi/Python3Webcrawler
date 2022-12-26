@@ -42,7 +42,7 @@ class Counter:
     def response(self, flow: mitmproxy.http.HTTPFlow):
         
         # 导入全局变量
-        global cryptos,filename,m3u8_data,result_filename,repair_file_py,title,finish_file_flag,userid,ts_url,m3u8_obj,m3u8_content
+        global filename,title,userid,ts_url,m3u8_obj,m3u8_content
 
 
         # 获取课程标题
