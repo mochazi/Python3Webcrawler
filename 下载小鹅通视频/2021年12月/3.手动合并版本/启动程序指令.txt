@@ -1,2 +1,2 @@
-先打开一个cmd，输入mitmweb -s request_demo.py
-然后再cd进入selenium启动文件夹，输入python selenium_start.py
+鍏堟墦寮�涓�涓猚md锛岃緭鍏itmweb -s request_demo.py
+鐒跺悗鍐峜d杩涘叆selenium鍚姩鏂囦欢澶癸紝杈撳叆python selenium_start.py
