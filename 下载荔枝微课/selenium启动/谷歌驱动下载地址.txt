@@ -1,0 +1,5 @@
+﻿地址一：
+http://chromedriver.storage.googleapis.com/index.html
+ 
+地址二：
+https://registry.npmmirror.com/binary.html?path=chromedriver/

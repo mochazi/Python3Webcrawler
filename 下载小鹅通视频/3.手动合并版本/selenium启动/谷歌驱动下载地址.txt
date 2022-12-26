@@ -1,1 +1,0 @@
-﻿淘宝镜像源：http://npm.taobao.org/mirrors/chromedriver
