@@ -90,7 +90,18 @@ class Counter:
 
                 # 获取解密参数（第一次解密）
                 # print(m3u8_key_url)
-                m3u8_content = requests.get(url=m3u8_key_url,headers=self.headers).content
+                try:
+                    m3u8_content = requests.get(
+                        url=m3u8_key_url,
+                        headers=self.headers,
+                        proxies={ "http": None, "https": None} # 不走系统代理，防止clash、v2ray等代理软件拦截
+                    ).content
+                except:
+                    print(f'-'*25 + 'm3u8_content连接失败' + '-'*25)
+                    print(f'[m3u8链接] = {m3u8_key_url}')
+                    print(f'[协议头] = {self.headers}')
+                    print(f'-'*50)
+                    raise (f'[ERROR]m3u8_content连接失败')
 
                 # 基于用户userid解密（第二次解密）
                 rsp_data = m3u8_content
