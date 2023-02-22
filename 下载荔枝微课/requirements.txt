@@ -3,7 +3,7 @@ beautifulsoup4==4.9.3
 blinker==1.4
 Brotli==1.0.9
 bs4==0.0.1
-certifi==2021.5.30
+certifi==2022.12.7
 cffi==1.14.6
 charset-normalizer==2.0.3
 click==7.1.2
